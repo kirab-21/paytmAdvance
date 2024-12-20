@@ -1,14 +1,12 @@
-import { type JSX } from "react";
-
-export function Card({
+export function Card ({
   className,
   title,
   children,
   href,
-}: {
+}:{
   className?: string;
   title: string;
-  children: React.ReactNode;
+  childre: React.ReactNode;
   href: string;
 }): JSX.Element {
   return (
@@ -18,7 +16,7 @@ export function Card({
       rel="noopener noreferrer"
       target="_blank"
     >
-      <h2>
+      <h2 className="text-sm">
         {title} <span>-&gt;</span>
       </h2>
       <p>{children}</p>
