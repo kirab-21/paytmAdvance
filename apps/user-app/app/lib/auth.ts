@@ -21,10 +21,10 @@ export const authOptions = {
         CredentialsProvider({
             name:'Credentials',
             credentials: {
-                phone: {label:"Phn No", type: "text", placeholder:"XXXXXXXXXX"},
-                password: {label: "Password", type: "password"}
+                phone: {label:"Phn No", type: "text", placeholder:"XXXXXXXXXX", required: true},
+                password: {label: "Password", type: "password", required: true}
             },
-            async authorize(credentials:any) {
+            async authorize(credentials: any) {
                 const parsedCredentials = credentialsSchema.safeParse(credentials);
 
                 if(!parsedCredentials.success) {
@@ -50,6 +50,7 @@ export const authOptions = {
                     }
                     return null;
                 }
+
                 try {
                     const user = await db.user.create({
                         data: {
@@ -66,6 +67,7 @@ export const authOptions = {
                 } catch(e) {
                     console.error(e);
                 }
+
                 return null;
             },
         })
