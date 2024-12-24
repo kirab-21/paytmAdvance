@@ -20,5 +20,13 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kirab-21/paytmAdvance.git",
+  "author": "Prabhudatta Barik <thexas21@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "recoil": "^0.7.7"
+  }
 }

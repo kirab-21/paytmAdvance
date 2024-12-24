@@ -15,5 +15,9 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2022"
-  }
+  },
+  "baseUrl": "../store/src/hook",
+  "paths": {
+    "@repo/store/balance": ["./useBalance"]
+}
 }
