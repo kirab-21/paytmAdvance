@@ -3312,6 +3312,11 @@ pretty-format@^3.8.0:
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-3.8.0.tgz#bfbed56d5e9a776645f4b1ff7aa1a3ac4fa3c385"
   integrity sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==
 
+prisma-client@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/prisma-client/-/prisma-client-0.0.0.tgz#f735e787f12dbf0518cf2c49beb4c8a1a4f09d47"
+  integrity sha512-tbK0ZaUt4E9IkQalS+2V5dv45lTcwxWNSXenRNEgSuzTJWW3T6SUgBfuk0gUS5wC07eQNEOU6/SVomVL/hsaHw==
+
 prisma@6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/prisma/-/prisma-6.0.1.tgz#63bf769c798b98986aeaf9cddbf12193f9e2c356"
@@ -4428,3 +4433,8 @@ zod@^3.24.1:
   version "3.24.1"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.1.tgz#27445c912738c8ad1e9de1bea0359fa44d9d35ee"
   integrity sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==
+
+zustand@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.3.tgz#b323435b73d06b2512e93c77239634374b0e407f"
+  integrity sha512-14fwWQtU3pH4dE0dOpdMiWjddcH+QzKIgk1cl8epwSE7yag43k/AD/m4L6+K7DytAOr9gGBe3/EXj9g7cdostg==

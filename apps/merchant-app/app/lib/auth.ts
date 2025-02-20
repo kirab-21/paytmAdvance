@@ -10,8 +10,8 @@ export const authOptions = {
     ],
 
     callbacks: {
-        async signIn({user, account}: {
-            users: {
+        async signIn({ user, account}: {
+            user: {
                 email: string;
                 name: string
             },

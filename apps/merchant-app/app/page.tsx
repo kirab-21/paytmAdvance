@@ -1,10 +1,12 @@
 "use client";
 
-import { useBalance } from "@repo/store/useBalance";
+//import { ReactNode } from "react";
+import { useBalanceStore } from "@repo/store/balanceStore";
 
-export default function() {
-  const balance = useBalance();
-  return <div>
-    hi there {balance}
-  </div>
+export default function BalanceComponent() {
+  const balance = useBalanceStore(
+    (state: { balance: number }) => state.balance,
+  ); // Access Zustand state
+
+  return <div>hi there {balance}</div>;
 }
