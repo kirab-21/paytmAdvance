@@ -11,6 +11,7 @@
 //docker exec -it 6eaf594c1711 /bin/bash
 // psql -U postgres
 // \dt;
+//
 generator client {
   provider = "prisma-client-js"
 }
@@ -20,19 +21,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model User {
-  id        Int       @id @default(autoincrement())
-  email     String?   @unique
-  name      String?
-  number    String    @unique
-  password  String
+  id       Int     @id @default(autoincrement())
+  email    String? @unique
+  name     String?
+  number   String  @unique
+  password String
 }
 
 model Merchant {
-  id        Int        @id @default(autoincrement())
-  email     String     @unique
-  name      String?     
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String?
   auth_type AuthType
 }
 
@@ -40,4 +40,3 @@ enum AuthType {
   Google
   Github
 }
-
